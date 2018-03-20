@@ -45,11 +45,19 @@ class App extends Component {
     );
   }
 }
+const getProductById = (products, productId)=> productId.find( p => p.id === productId);
+const populateCartItems =(cart,products) =>({
+  ...cart,
+  items: cart.items.map(item =>({
+    ...item,
+    product: getProductById(products, item.productId)
 
+  }))
+})
 const mapStateToProps = (state) => ({
   isProductsLoading: state.product.isLoading,
   products: state.product.products,
-  cart: state.cart.cart,
+  cart: populateCartItems(state.cart.cart, state.product.products),
 });
 
 const mapDispatchToProps = {

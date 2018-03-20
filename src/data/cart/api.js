@@ -1,4 +1,3 @@
-
 const saveToLocalStorage = (cart) =>{
    localStorage.setItem('cart', JSON.stringify(cart));
 }

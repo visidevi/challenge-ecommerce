@@ -30,8 +30,8 @@ const CartTable = ({cart}) =>(
             {cart.items.map(item =>(
 
                 <tr key ={item.productId}>
-                 <td>Product Name ??{}</td> 
-                 <td>Product Price ??{}</td> 
+                 <td>{item.product.name}</td> 
+                 <td>{item.product.price}</td> 
                  <td>{item.quantity}</td> 
                 </tr>
 

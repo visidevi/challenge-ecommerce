@@ -1,6 +1,6 @@
 export default  [
   {
-    "id": 1,
+    "id": "1",
     "imageURL": "http://placehold.it/150/1b21a0/ffffff",
     "name": "product A",
     "type": "",
@@ -8,7 +8,7 @@ export default  [
     "currency": "$"
   },
   {
-    "id": 2,
+    "id":" 2",
     "imageURL": "http://placehold.it/150/bc4125/ffffff",
     "name": "product B",
     "type": "",
@@ -16,7 +16,7 @@ export default  [
     "currency": "$"
   },
   {
-    "id": 3,
+    "id": "3",
     "imageURL": "http://placehold.it/150/5abc25/ffffff",
     "name": "product C",
     "type": "",
@@ -24,7 +24,7 @@ export default  [
     "currency": "$"
   },
   {
-    "id": 4,
+    "id": "4",
     "imageURL": "http://placehold.it/150/ebf742/ffffff",
     "name": "product D",
     "type": "",
@@ -32,7 +32,7 @@ export default  [
     "currency": "$"
   },
   {
-    "id": 5,
+    "id": "5",
     "imageURL": "http://placehold.it/150/d121c8/ffffff",
     "name": "product D",
     "type": "",
