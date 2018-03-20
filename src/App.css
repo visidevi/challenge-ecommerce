@@ -1,0 +1,13 @@
+.product {
+  width: 5em;
+  border: 3px solid green;
+  background-color: dimgrey;
+  -webkit-transition: width 1s, height 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 1s, height 2s; 
+}
+.product:hover{
+  width: 7em;
+  filter: grayscale(0%);
+  border: 5px solid green;
+  background-color: red;
+}
