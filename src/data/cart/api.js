@@ -12,5 +12,24 @@ const getFromLocalStorage = () =>{
 //         {producId:'3', quantity: 3},
 //     ]
 // })
-export const fetchCart = async () => getFromLocalStorage();
-export
+export const fetch = async () => getFromLocalStorage();
+export const addToCart = async (productId, quantity = 1)=>{
+    const cart = await fetch();
+    const exists = cart.items.findIndex(item => item.producId === productId) > -1;
+    if(exists){
+        throw {message: 'item Existente'}
+    }
+    const newItem = {productId, quantity};
+    const newCart = {
+        ...cart,
+        items:[
+            ...cart.items,
+            newItem,
+        ],
+    };
+
+    saveToLocalStorage(newCart);
+    return newCart;
+}
+addToCart('hola3', 6);
+console.log('cart', getFromLocalStorage())
