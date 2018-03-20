@@ -6,7 +6,7 @@ import {
    ADD_TO_CART,
    ADD_TO_CART_SUCCESS,
    ADD_TO_CART_FAILURE,
-  } from '../actionTypes'
+  } from '../actionTypes';
   export const fetchCart = () =>({
          type: FETCH_CART,          
 
@@ -34,9 +34,3 @@ export const addToCartFailure = (error) =>({
     error,
       
 })
-  
-  
-  
-  
-  addToCartSuccess
-  
