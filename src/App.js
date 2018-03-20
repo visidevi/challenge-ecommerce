@@ -27,7 +27,7 @@ class App extends Component {
         <Grid>
          <Row>
          <Col xs={12}>
-         <AppBar title='Fallabela Shopping Car'/>
+         <AppBar title='Fallabela Shopping Car' iconClassNameRight="NONE"/>
          </Col>
          </Row> 
          <ProductGrid

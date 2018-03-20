@@ -3,20 +3,28 @@ import PropTypes from 'prop-types';
 import { Row, Col } from 'react-flexbox-grid';
 import FlatButton from 'material-ui/FlatButton';
 import Paper from 'material-ui/Paper';
-
+const style = {
+  height: 100,
+  width: 100,
+  margin: 20,
+  textAlign: 'center',
+  display: 'inline-block',
+};
 const ProductGrid = ({ products }) => (
+  
 
   <Row>
     {products.map(product => (
-    <Col className="product" xs={6} md={2} key={product.id} zDepth={4}>
+    
+    <Col className="product" xs={6} md={2} key={product.id}>
+    <Paper style={style} zDepth={4} >
     <img src={product.imageURL} alt={product.id}/>
-    <ul>
-    <li>{product.name}</li>
-    <li>{product.currency} {product.price}</li>
-    </ul>
-    <FlatButton label="Buy"  fullWidth={true} />
-
+    <p>{product.name}</p>
+    <p>{product.currency} {product.price}</p>
+    <FlatButton label="Buy" secondary={true}  fullWidth={true} />
+    </Paper>
     </Col>
+ 
      ))}
   </Row>
 );

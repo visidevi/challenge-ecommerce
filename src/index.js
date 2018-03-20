@@ -4,9 +4,10 @@ import { Provider } from 'react-redux';
 import App from './App';
 import configureStore from './state/store';
 import registerServiceWorker from './registerServiceWorker';
-import './data/cart/api';
+// import { addToCart} from './state/cart/actions'
 
 const store = configureStore({  });
+// store.dispatch(addToCart('item1',9))
 
 ReactDOM.render(
   <Provider store={store}>
